@@ -3,10 +3,13 @@ using namespace std;
 
 void sign(int n)
 {
-	while (n > 0)
+	if (n == 0)
+	{
+	} 
+	else
 	{
 		cout << "No Parking: " << n << endl;
-		n--;
+		sign(n - 1);
 	}
 } 
 
